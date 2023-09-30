@@ -7,7 +7,8 @@ spring:
     config:
       server:
         native:
-          search-locations: "classpath:/config"
+          # search-locations: "classpath:/config"
+          search-locations: D:\Nilesh\github\eazybytes_ms_k8s\config
 
 server:
   port: 8071
