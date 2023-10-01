@@ -38,9 +38,6 @@ services:
     container_name: accounts-ms
     ports:
       - "8080:8080"
-    depends_on: 
-      configserver:
-        condition: service_completed_successfully  
     environment:
       SPRING_APPLICATION_NAME: "accounts"
     extends:
@@ -52,9 +49,6 @@ services:
     container_name: loans-ms
     ports:
       - "8090:8090"
-    depends_on: 
-      configserver:
-        condition: service_completed_successfully  
     environment:
       SPRING_APPLICATION_NAME: "loans"
     extends:
@@ -66,9 +60,6 @@ services:
     container_name: cards-ms
     ports:
       - "9000:9000"
-    depends_on: 
-      configserver:
-        condition: service_completed_successfully        
     environment:
       SPRING_APPLICATION_NAME: "cards"   
     extends:
